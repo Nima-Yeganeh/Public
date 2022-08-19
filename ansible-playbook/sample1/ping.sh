@@ -1,1 +1,1 @@
-ansible-playbook -i hosts ping.yml
+ansible-playbook -i hosts -k ping.yml
