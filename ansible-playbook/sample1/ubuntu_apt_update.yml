@@ -1,3 +1,4 @@
+---
  - name: Ansible apt module examples
    hosts: all
    become: true
