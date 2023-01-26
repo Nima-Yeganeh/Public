@@ -1,0 +1,10 @@
+---
+- name: show version command result
+  hosts: routers
+  gather_facts: false
+  tasks:
+    - name: show version command result
+      raw: "show version"
+      register: output
+    - name: printing output
+      debug: var=output.stdout_lines
