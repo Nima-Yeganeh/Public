@@ -1,0 +1,8 @@
+# add routers to host-file
+
+vim /etc/ansible/hosts
+[routers]
+192.168.244.101
+192.168.244.102
+192.168.244.103
+192.168.244.104
