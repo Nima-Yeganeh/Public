@@ -53,3 +53,4 @@ post_id = client.call(NewPost(post))
 print('New post created with ID:', post_id)
 
 # In this updated version, we've added the ability to upload an image file to the WordPress site using the UploadFile method. We open the image file using a with statement, read the binary data, and then use the os.path.basename function to get the filename. We then call the UploadFile method with the filename and data, and store the response. Finally, we set the thumbnail property of the post to the ID of the uploaded image, and create the post as before.
+
