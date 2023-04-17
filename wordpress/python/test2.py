@@ -3,8 +3,8 @@ from wordpress_xmlrpc.methods.posts import NewPost
 
 # Set up the WordPress client
 wp_url = 'http://domain.local/xmlrpc.php'
-wp_username = 'your_wordpress_username'
-wp_password = 'your_wordpress_password'
+wp_username = 'admin'
+wp_password = 'P@ssw0rd'
 client = Client(wp_url, wp_username, wp_password)
 
 # Create a new post
