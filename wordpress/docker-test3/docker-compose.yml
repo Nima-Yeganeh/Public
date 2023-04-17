@@ -37,6 +37,8 @@ services:
         define('WP_CACHE_KEY_SALT', 'your-unique-salt-here');
         define('WP_CACHE', true);
       REDIS_HOST: redis
+    volumes:
+      - wp_content:/var/www/html/wp-content     
 
   nginx:
     image: nginx:latest
@@ -49,3 +51,4 @@ services:
 
 volumes:
   db_data:
+  wp_content:
