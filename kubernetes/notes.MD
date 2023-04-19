@@ -37,3 +37,4 @@ ConfigMap: A Kubernetes object used to store configuration data as key-value pai
 Secret: A Kubernetes object used to store sensitive information, such as passwords and API keys, which can be injected into a pod as environment variables or mounted as files.
 
 Container: An isolated environment for running an application, packaged with all its dependencies, libraries, and runtime. Containers are deployed and managed as part of a pod in Kubernetes.
+
