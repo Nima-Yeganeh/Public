@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  alpine:
+    image: alpine:latest
+    volumes:
+      - ./terraform:/terraform
+    working_dir: /terraform
+  terraform:
+    image: hashicorp/terraform:1.0.4
+    volumes:
+      - ./terraform:/terraform
+    working_dir: /terraform
+    depends_on:
+      - alpine

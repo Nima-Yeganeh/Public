@@ -1,0 +1,7 @@
+version: '3'
+services:
+  terraform:
+    image: hashicorp/terraform
+    volumes:
+      - ./terraform:/terraform
+    working_dir: /terraform
