@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  dovecot:
+    image: ubuntu:latest
+    volumes:
+      - ./dovecot.conf:/etc/dovecot/dovecot.conf
+    ports:
+      - "143:143"
+      - "993:993"
+    command: /bin/bash -c "apt-get update && apt-get install -y dovecot && dovecot -F"
