@@ -1,4 +1,4 @@
-# Ideally certifications like TOGAF, ITIL or COBIT
+# Certifications like TOGAF, ITIL or COBIT
 
 TOGAF, ITIL, and COBIT are all certifications related to IT service management and enterprise architecture. Here is some more information about each certification:
 

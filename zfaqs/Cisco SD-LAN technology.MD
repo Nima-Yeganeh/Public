@@ -1,4 +1,4 @@
-# Experience in Cisco SD-LAN technology and management tools (e.g. Cisco DNA Center, Cisco ISE, Cisco TrustSec)
+# Cisco SD-LAN technology and management tools (e.g. Cisco DNA Center, Cisco ISE, Cisco TrustSec)
 
 Cisco SD-LAN (Software-Defined Local Area Network) technology is a software-based approach to managing and controlling a local area network (LAN). It provides greater flexibility and scalability than traditional LAN solutions, allowing network administrators to manage network resources more efficiently.
 
