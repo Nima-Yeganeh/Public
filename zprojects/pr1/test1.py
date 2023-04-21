@@ -1,5 +1,7 @@
 import os
 import openai
+import time
+import datetime
 
 openai.api_key = ("sk-joeRLSZjsL9bOXI2PT3BlbkFJEc4ys7pAJe7SL82uqxtE")
 
@@ -75,6 +77,7 @@ def generate_filename(newfilename):
 
 with open(file_path3, 'r') as f:
     for line in f:
+        time.sleep(10)
         prompt = line.strip()
         print(prompt)
         story = generate_response(prompt)

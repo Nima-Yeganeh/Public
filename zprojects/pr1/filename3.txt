@@ -1,2 +1,7 @@
-Why should DevOps engineer learn kubernetes
-Why should DevOps engineer learn docker
+Why should IT engineer learn kubernetes
+Why should IT engineer learn docker
+Why should IT engineer learn mysql
+Why should IT engineer learn redis
+Why should IT engineer learn nginx
+Why should IT engineer learn php
+Why should IT engineer learn mongodb
