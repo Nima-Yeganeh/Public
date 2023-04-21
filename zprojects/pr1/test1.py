@@ -73,10 +73,11 @@ def generate_filename(newfilename):
     newfile_path1 = new_string1
     return(newfile_path1)
 
-with open(file_path3, 'r') as f, open(file_path4, 'w') as output_file:
+with open(file_path3, 'r') as f:
     for line in f:
         prompt = line.strip()
         print(prompt)
         story = generate_response(prompt)
         print(story)
-        output_file.write(story + '\n')
+        with open(generate_filename(prompt), 'w') as output_file:
+            output_file.write(story + '\n')
