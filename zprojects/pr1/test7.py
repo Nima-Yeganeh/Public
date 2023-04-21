@@ -43,7 +43,7 @@ if os.path.exists(file_path4):
 else:
     print(f"File {file_path4} does not exist.")
 
-with open(file_path1, 'r') as file1, open(file_path2, 'r') as file2, open(file_path3, 'w') as output_file:
+with open(file_path2, 'r') as file1, open(file_path1, 'r') as file2, open(file_path3, 'w') as output_file:
     for line1 in file1:
         faqs = []
         file2.seek(0)
@@ -55,23 +55,18 @@ with open(file_path1, 'r') as file1, open(file_path2, 'r') as file2, open(file_p
             output_file.write(string + '\n')
 
 def generate_response(question):
-    response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=[
-                {"role": "system", "content": "You are a chatbot"},
-                {"role": "user", "content": question},
-            ]
+    # prompt = f"Q: {question}\nA:"
+    prompt = f"{question}\n"
+    completions = openai.Completion.create(
+        engine="davinci",
+        prompt=prompt,
+        max_tokens=1024,
+        n=1,
+        stop=None,
+        temperature=0.7,
     )
-    result = ''
-    for choice in response.choices:
-        result += choice.message.content
-    return(result)
-
-def generate_filename(newfilename):
-    original_string1 = __file__
-    new_string1 = original_string1.replace(os.path.basename(__file__), newfilename+'.MD')
-    newfile_path1 = new_string1
-    return(newfile_path1)
+    message = completions.choices[0].text.strip()
+    return message
 
 with open(file_path3, 'r') as f, open(file_path4, 'w') as output_file:
     for line in f:
