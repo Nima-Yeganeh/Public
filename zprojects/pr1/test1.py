@@ -77,7 +77,7 @@ def generate_filename(newfilename):
 
 with open(file_path3, 'r') as f:
     for line in f:
-        time.sleep(10)
+        time.sleep(20)
         prompt = line.strip()
         print(prompt)
         story = generate_response(prompt)

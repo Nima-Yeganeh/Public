@@ -1,7 +1,40 @@
-Why should IT engineer learn kubernetes
-Why should IT engineer learn docker
-Why should IT engineer learn mysql
-Why should IT engineer learn redis
-Why should IT engineer learn nginx
-Why should IT engineer learn php
-Why should IT engineer learn mongodb
+Why should IT engineer learn Git - Version control system
+Why should IT engineer learn Jenkins - Continuous Integration and Continuous Deployment (CI CD) tool
+Why should IT engineer learn Ansible - Configuration management and automation tool
+Why should IT engineer learn Docker - Containerization platform
+Why should IT engineer learn Kubernetes - Container orchestration tool
+Why should IT engineer learn Terraform - Infrastructure as code (IaC) tool
+Why should IT engineer learn Chef - Configuration management tool
+Why should IT engineer learn Puppet - Configuration management tool
+Why should IT engineer learn Nagios - Monitoring tool
+Why should IT engineer learn Grafana - Monitoring and data visualization tool
+Why should IT engineer learn ELK Stack - Log management and analysis tool
+Why should IT engineer learn Prometheus - Monitoring and alerting tool
+Why should IT engineer learn Spinnaker - Continuous Delivery platform
+Why should IT engineer learn CircleCI - CI CD platform
+Why should IT engineer learn Travis CI - CI CD platform
+Why should IT engineer learn AWS CodePipeline - CI CD platform on Amazon Web Services (AWS)
+Why should IT engineer learn Azure DevOps - CI CD platform on Microsoft Azure
+Why should IT engineer learn GitLab - Version control CI CD and DevOps platform
+Why should IT engineer learn Bitbucket - Version control and CI CD platform on Atlassian
+Why should IT engineer learn JIRA - Issue tracking and project management tool on Atlassian
+How should IT engineer learn Git - Version control system
+How should IT engineer learn Jenkins - Continuous Integration and Continuous Deployment (CI CD) tool
+How should IT engineer learn Ansible - Configuration management and automation tool
+How should IT engineer learn Docker - Containerization platform
+How should IT engineer learn Kubernetes - Container orchestration tool
+How should IT engineer learn Terraform - Infrastructure as code (IaC) tool
+How should IT engineer learn Chef - Configuration management tool
+How should IT engineer learn Puppet - Configuration management tool
+How should IT engineer learn Nagios - Monitoring tool
+How should IT engineer learn Grafana - Monitoring and data visualization tool
+How should IT engineer learn ELK Stack - Log management and analysis tool
+How should IT engineer learn Prometheus - Monitoring and alerting tool
+How should IT engineer learn Spinnaker - Continuous Delivery platform
+How should IT engineer learn CircleCI - CI CD platform
+How should IT engineer learn Travis CI - CI CD platform
+How should IT engineer learn AWS CodePipeline - CI CD platform on Amazon Web Services (AWS)
+How should IT engineer learn Azure DevOps - CI CD platform on Microsoft Azure
+How should IT engineer learn GitLab - Version control CI CD and DevOps platform
+How should IT engineer learn Bitbucket - Version control and CI CD platform on Atlassian
+How should IT engineer learn JIRA - Issue tracking and project management tool on Atlassian
