@@ -1,0 +1,19 @@
+Sure, here are some tips and tricks for working with Ansible:
+
+1. Use Ansible Vault: This is a built-in feature that allows you to encrypt your sensitive data such as private keys and passwords. This can be particularly helpful when storing information in a version control system.
+
+2. Make use of Jinja2 templates: These templates are a powerful feature of Ansible that allow you to generate dynamic YAML configurations. This can be particularly helpful if you need to generate multiple configurations based on different variables.
+
+3. Organize your inventory properly: A well-organized inventory is fundamental for proper use of Ansible. It is important to ensure that all hosts are grouped properly and that all variables are set correctly.
+
+4. Document your Ansible playbook: It is important to make sure that all of your Ansible playbooks are well-documented. This can help you and other team members understand how your system is being configured.
+
+5. Use dynamic inclusions: Dynamic inclusions can be useful when you want to include additional tasks or playbooks based on the outcome of certain tasks.
+
+6. Use tags: You can use tags to group tasks together and execute only specific tasks. This can make playbook execution more efficient and quicker.
+
+7. Keep your playbook clean: Make sure you write concise and clean playbooks, with easily-readable code. This will make it easier to maintain and troubleshoot errors.
+
+8. Use Ansible Galaxy: Ansible Galaxy is a repository of pre-built Ansible roles that can be easily integrated into your playbooks. This can help speed up your development process.
+
+Hope these tips help you to work better with Ansible!

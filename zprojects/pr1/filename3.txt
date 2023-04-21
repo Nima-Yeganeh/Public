@@ -1,40 +1,60 @@
-Why should IT engineer learn Git - Version control system
-Why should IT engineer learn Jenkins - Continuous Integration and Continuous Deployment (CI CD) tool
-Why should IT engineer learn Ansible - Configuration management and automation tool
-Why should IT engineer learn Docker - Containerization platform
-Why should IT engineer learn Kubernetes - Container orchestration tool
-Why should IT engineer learn Terraform - Infrastructure as code (IaC) tool
-Why should IT engineer learn Chef - Configuration management tool
-Why should IT engineer learn Puppet - Configuration management tool
-Why should IT engineer learn Nagios - Monitoring tool
-Why should IT engineer learn Grafana - Monitoring and data visualization tool
-Why should IT engineer learn ELK Stack - Log management and analysis tool
-Why should IT engineer learn Prometheus - Monitoring and alerting tool
-Why should IT engineer learn Spinnaker - Continuous Delivery platform
-Why should IT engineer learn CircleCI - CI CD platform
-Why should IT engineer learn Travis CI - CI CD platform
-Why should IT engineer learn AWS CodePipeline - CI CD platform on Amazon Web Services (AWS)
-Why should IT engineer learn Azure DevOps - CI CD platform on Microsoft Azure
-Why should IT engineer learn GitLab - Version control CI CD and DevOps platform
-Why should IT engineer learn Bitbucket - Version control and CI CD platform on Atlassian
-Why should IT engineer learn JIRA - Issue tracking and project management tool on Atlassian
-How should IT engineer learn Git - Version control system
-How should IT engineer learn Jenkins - Continuous Integration and Continuous Deployment (CI CD) tool
-How should IT engineer learn Ansible - Configuration management and automation tool
-How should IT engineer learn Docker - Containerization platform
-How should IT engineer learn Kubernetes - Container orchestration tool
-How should IT engineer learn Terraform - Infrastructure as code (IaC) tool
-How should IT engineer learn Chef - Configuration management tool
-How should IT engineer learn Puppet - Configuration management tool
-How should IT engineer learn Nagios - Monitoring tool
-How should IT engineer learn Grafana - Monitoring and data visualization tool
-How should IT engineer learn ELK Stack - Log management and analysis tool
-How should IT engineer learn Prometheus - Monitoring and alerting tool
-How should IT engineer learn Spinnaker - Continuous Delivery platform
-How should IT engineer learn CircleCI - CI CD platform
-How should IT engineer learn Travis CI - CI CD platform
-How should IT engineer learn AWS CodePipeline - CI CD platform on Amazon Web Services (AWS)
-How should IT engineer learn Azure DevOps - CI CD platform on Microsoft Azure
-How should IT engineer learn GitLab - Version control CI CD and DevOps platform
-How should IT engineer learn Bitbucket - Version control and CI CD platform on Atlassian
-How should IT engineer learn JIRA - Issue tracking and project management tool on Atlassian
+Key Terms of Git - Version control system
+Key Terms of Jenkins - Continuous Integration and Continuous Deployment (CI CD) tool
+Key Terms of Ansible - Configuration management and automation tool
+Key Terms of Docker - Containerization platform
+Key Terms of Kubernetes - Container orchestration tool
+Key Terms of Terraform - Infrastructure as code (IaC) tool
+Key Terms of Chef - Configuration management tool
+Key Terms of Puppet - Configuration management tool
+Key Terms of Nagios - Monitoring tool
+Key Terms of Grafana - Monitoring and data visualization tool
+Key Terms of ELK Stack - Log management and analysis tool
+Key Terms of Prometheus - Monitoring and alerting tool
+Key Terms of Spinnaker - Continuous Delivery platform
+Key Terms of CircleCI - CI CD platform
+Key Terms of Travis CI - CI CD platform
+Key Terms of AWS CodePipeline - CI CD platform on Amazon Web Services (AWS)
+Key Terms of Azure DevOps - CI CD platform on Microsoft Azure
+Key Terms of GitLab - Version control CI CD and DevOps platform
+Key Terms of Bitbucket - Version control and CI CD platform on Atlassian
+Key Terms of JIRA - Issue tracking and project management tool on Atlassian
+Advantages and Disadvantages of Git - Version control system
+Advantages and Disadvantages of Jenkins - Continuous Integration and Continuous Deployment (CI CD) tool
+Advantages and Disadvantages of Ansible - Configuration management and automation tool
+Advantages and Disadvantages of Docker - Containerization platform
+Advantages and Disadvantages of Kubernetes - Container orchestration tool
+Advantages and Disadvantages of Terraform - Infrastructure as code (IaC) tool
+Advantages and Disadvantages of Chef - Configuration management tool
+Advantages and Disadvantages of Puppet - Configuration management tool
+Advantages and Disadvantages of Nagios - Monitoring tool
+Advantages and Disadvantages of Grafana - Monitoring and data visualization tool
+Advantages and Disadvantages of ELK Stack - Log management and analysis tool
+Advantages and Disadvantages of Prometheus - Monitoring and alerting tool
+Advantages and Disadvantages of Spinnaker - Continuous Delivery platform
+Advantages and Disadvantages of CircleCI - CI CD platform
+Advantages and Disadvantages of Travis CI - CI CD platform
+Advantages and Disadvantages of AWS CodePipeline - CI CD platform on Amazon Web Services (AWS)
+Advantages and Disadvantages of Azure DevOps - CI CD platform on Microsoft Azure
+Advantages and Disadvantages of GitLab - Version control CI CD and DevOps platform
+Advantages and Disadvantages of Bitbucket - Version control and CI CD platform on Atlassian
+Advantages and Disadvantages of JIRA - Issue tracking and project management tool on Atlassian
+Tips and Tricks of Git - Version control system
+Tips and Tricks of Jenkins - Continuous Integration and Continuous Deployment (CI CD) tool
+Tips and Tricks of Ansible - Configuration management and automation tool
+Tips and Tricks of Docker - Containerization platform
+Tips and Tricks of Kubernetes - Container orchestration tool
+Tips and Tricks of Terraform - Infrastructure as code (IaC) tool
+Tips and Tricks of Chef - Configuration management tool
+Tips and Tricks of Puppet - Configuration management tool
+Tips and Tricks of Nagios - Monitoring tool
+Tips and Tricks of Grafana - Monitoring and data visualization tool
+Tips and Tricks of ELK Stack - Log management and analysis tool
+Tips and Tricks of Prometheus - Monitoring and alerting tool
+Tips and Tricks of Spinnaker - Continuous Delivery platform
+Tips and Tricks of CircleCI - CI CD platform
+Tips and Tricks of Travis CI - CI CD platform
+Tips and Tricks of AWS CodePipeline - CI CD platform on Amazon Web Services (AWS)
+Tips and Tricks of Azure DevOps - CI CD platform on Microsoft Azure
+Tips and Tricks of GitLab - Version control CI CD and DevOps platform
+Tips and Tricks of Bitbucket - Version control and CI CD platform on Atlassian
+Tips and Tricks of JIRA - Issue tracking and project management tool on Atlassian

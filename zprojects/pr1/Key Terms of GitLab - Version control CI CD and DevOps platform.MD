@@ -1,0 +1,5 @@
+- Version control: a system that tracks changes to code files over time, enabling teams to collaborate on the same codebase without conflicts
+- CI (continuous integration): a development practice where code changes are frequently merged into a shared repository, with each change triggering automated tests to ensure the code remains functional
+- CD (continuous delivery): the process of automatically deploying code changes to a staging or production environment once they've passed through automated testing
+- DevOps: a set of development practices that emphasizes collaboration and integration between development and operations teams to deliver software more efficiently and reliably
+- GitLab: an all-in-one platform for version control, CI/CD, and collaboration, designed to help development teams streamline their workflows and improve productivity.
