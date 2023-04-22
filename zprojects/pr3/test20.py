@@ -1,5 +1,13 @@
+# python.exe -m pip install --upgrade pip
+# pip install gtts
+# pip3 install gtts
+# pip install --upgrade gtts
+
+# pip install Pillow
+
 # pip install moviepy
 # pip install ffmpeg-python
+# pip install mutagen
 
 from gtts import gTTS
 from PIL import Image, ImageDraw, ImageFont
@@ -16,10 +24,11 @@ def generate_filepath():
 
 # open the file and read its content
 with open(generate_filepath()+'example.txt', 'r') as file:
-    text = file.read().replace('\n', '')
+    text = file.read().replace('\n', '\n')
+print(text)
 
 # create a gTTS object and specify the language
-tts = gTTS(text, lang='en')
+tts = gTTS(text, lang='en', slow=False)
 
 # save the audio file
 tts.save(generate_filepath()+'example.mp3')

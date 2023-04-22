@@ -1,5 +1,6 @@
 # pip install moviepy
 # pip install ffmpeg-python
+# pip install mutagen
 
 from moviepy.editor import *
 from mutagen.mp3 import MP3
