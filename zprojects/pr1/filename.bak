@@ -1,0 +1,20 @@
+Git - Version control system
+Jenkins - Continuous Integration and Continuous Deployment (CI CD) tool
+Ansible - Configuration management and automation tool
+Docker - Containerization platform
+Kubernetes - Container orchestration tool
+Terraform - Infrastructure as code (IaC) tool
+Chef - Configuration management tool
+Puppet - Configuration management tool
+Nagios - Monitoring tool
+Grafana - Monitoring and data visualization tool
+ELK Stack - Log management and analysis tool
+Prometheus - Monitoring and alerting tool
+Spinnaker - Continuous Delivery platform
+CircleCI - CI CD platform
+Travis CI - CI CD platform
+AWS CodePipeline - CI CD platform on Amazon Web Services (AWS)
+Azure DevOps - CI CD platform on Microsoft Azure
+GitLab - Version control CI CD and DevOps platform
+Bitbucket - Version control and CI CD platform on Atlassian
+JIRA - Issue tracking and project management tool on Atlassian
