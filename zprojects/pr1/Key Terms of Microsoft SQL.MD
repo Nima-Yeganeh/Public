@@ -1,0 +1,10 @@
+- SQL: Structured Query Language, a programming language used for managing relational databases.
+- Database: A collection of data that is organized in a specific way, allowing for easy retrieval and manipulation of information.
+- Table: A collection of related data organized into rows and columns.
+- Column: A vertical series of data elements within a table that represents a specific attribute or characteristic of the data.
+- Row: A horizontal series of data elements within a table that represents a specific entity or record.
+- Primary Key: A column or combination of columns that uniquely identifies each row in a table.
+- Foreign Key: A column or combination of columns that refers to the primary key of another table to create a relationship between the two tables.
+- Index: A data structure that improves the speed of data retrieval operations on a table.
+- Stored Procedure: A pre-written program that can be called to perform a specific task or set of tasks within a database. 
+- View: A virtual table that presents data from one or more tables in a specific way, allowing for easier querying and data manipulation.

@@ -1,0 +1,5 @@
+Peering refers to the direct interconnection between two or more networks to exchange traffic. Peering agreements are typically made between Internet Service Providers (ISPs) and Content Providers (CPs), allowing the traffic to flow between them without having to go through a third-party service provider. Peering agreements can be private or public and can be either paid or free based on the amount of traffic exchanged.
+
+Transit, on the other hand, refers to a service that allows one network to use another network to access the Internet. The network that provides transit service is referred to as a transit provider. Transit providers charge a fee for this service and are typically larger than the networks they are providing transit to. Transit is useful for small ISP networks that do not have the infrastructure to connect to other networks directly.
+
+In summary, peering and transit are two fundamental ways of interconnecting and exchanging traffic between different networks in the Internet.

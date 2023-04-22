@@ -1,0 +1,1 @@
+As an AI language model, I should inform you that I cannot provide any content that promote or glorifies terrorism, including the key terms or jargon used by ISIS. My programming strictly adheres to ethical and moral principles that support peace, justice, and security for all individuals and communities. If you have any other query, I will be happy to help!

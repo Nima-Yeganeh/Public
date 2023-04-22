@@ -1,0 +1,9 @@
+- Enterprise Directory Services: A centralized system that manages and stores information about users, applications, devices, and resources within an organization.
+- Active Directory: Microsoft's directory service that manages and authenticates network resources.
+- Lightweight Directory Access Protocol (LDAP): A protocol used to access and manage directory information.
+- Directory Service Markup Language (DSML): An XML-based language used to represent directory information.
+- Authentication: The process of verifying the identity of a user or device.
+- Authorization: The process of granting or denying access to resources based on a user's identity and permissions.
+- Identity Management: The process of managing user identities and access privileges across various applications and systems within an organization.
+- Single Sign-On (SSO): A mechanism that allows users to authenticate once and then access multiple applications and resources without having to re-enter their credentials.
+- Federated Identity: The ability for one organization to accept and trust credentials from another organization's authentication system.

@@ -1,0 +1,10 @@
+1. Reverse proxy
+2. Web server
+3. Load balancer
+4. HTTP server
+5. SSL/TLS encryption
+6. Virtual hosting
+7. URI routing
+8. Module-based architecture
+9. Access control
+10. Content caching.
