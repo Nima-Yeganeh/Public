@@ -1,2 +1,2 @@
-Why should IT engineer learn Travis CI - CI CD platform
+Why should IT engineer learn Travis CI - CI CD platform?
 IT engineers should learn Travis CI because it is a popular continuous integration and continuous delivery (CI/CD) platform that helps automate the process of software development and deployment. By using Travis CI, IT engineers can achieve faster and more reliable software delivery, which leads to improved productivity and customer satisfaction. It also provides several benefits such as automated testing, code coverage, and deployment to multiple environments. Additionally, Travis CI provides support for a wide range of programming languages, which makes it a versatile tool for IT engineers working in different domains.
