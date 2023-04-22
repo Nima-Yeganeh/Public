@@ -1,0 +1,51 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: your_mysql_password
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: your_wordpress_password
+
+  wordpress:
+    depends_on:
+      - db
+    image: wordpress:latest
+    volumes:
+      - wp_content:/var/www/html/wp-content
+    restart: always
+    ports:
+      - "80:80"
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: your_wordpress_password
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_TABLE_PREFIX: wp_
+      WORDPRESS_CONFIG_EXTRA: |
+        define( 'WP_DEBUG', false );
+        define( 'WP_POST_REVISIONS', 5 );
+        define( 'WP_MEMORY_LIMIT', '64M' );
+        define( 'DISALLOW_FILE_EDIT', true );
+        define( 'AUTOMATIC_UPDATER_DISABLED', true );
+        define( 'WP_ADMIN_USER', 'admin' );
+        define( 'WP_ADMIN_PASSWORD', 'P@ssw0rd' );
+        define( 'WP_SITEURL', 'http://domain.local' );
+        define( 'WP_HOME', 'http://domain.local' );
+    command: >
+      bash -c "
+        /usr/local/bin/docker-entrypoint.sh apache2-foreground &
+        sleep 10s &&
+        apt-get update &&
+        apt-get install -y less curl &&
+        curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar &&
+        php wp-cli.phar core install --allow-root --url='http://domain.local' --title='Just Another Blog' --admin_user='admin' --admin_password='P@ssw0rd' --admin_email='admin@domain.local' --skip-email"
+
+volumes:
+  db_data:
+  wp_content:

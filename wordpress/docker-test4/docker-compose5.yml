@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: your_mysql_password
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: your_wordpress_password
+
+  wordpress:
+    depends_on:
+      - db
+    image: wordpress:latest
+    volumes:
+      - wp_content:/var/www/html/wp-content
+    restart: always
+    ports:
+      - "80:80"
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: your_wordpress_password
+      WORDPRESS_DB_NAME: wordpress
+    command: >
+      bash -c "
+        /usr/local/bin/docker-entrypoint.sh apache2-foreground &
+        sleep 10s &&
+        apt-get update &&
+        apt-get install -y less curl
+      "
+volumes:
+  db_data:
+  wp_content:

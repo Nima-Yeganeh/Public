@@ -1,0 +1,47 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: your_mysql_password
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: your_wordpress_password
+
+  wordpress:
+    depends_on:
+      - db
+    image: wordpress:5.5.0-php7.4-apache
+    volumes:
+      - wp_content:/var/www/html/wp-content
+    restart: always
+    ports:
+      - "80:80"
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: your_wordpress_password
+      WORDPRESS_DB_NAME: wordpress
+    command: >
+      bash -c "
+        /usr/local/bin/docker-entrypoint.sh apache2-foreground &
+        sleep 10s &&
+        apt-get update &&
+        apt-get install -y less curl &&
+        curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar &&
+        chmod +x wp-cli.phar &&
+        mv wp-cli.phar /usr/local/bin/wp &&
+        wp --info &&
+        wp core download --locale=en_US --path=/var/www/html --allow-root &&
+        wp core config --dbname=wordpress --dbuser=wordpress --dbpass=your_wordpress_password --dbhost=db --dbprefix=wp_ --path=/var/www/html --allow-root &&
+        wp core install --url=http://domain.local --title='Just Another Blog' --admin_user=admin --admin_password=P@ssw0rd --admin_email=admin@domain.local --path=/var/www/html --allow-root --skip-email &&
+        wp rewrite structure '/%postname%/' --allow-root
+      "
+
+volumes:
+  db_data:
+  wp_content:
