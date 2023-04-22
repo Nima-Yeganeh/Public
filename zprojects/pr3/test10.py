@@ -27,7 +27,7 @@ def get_png_resolution_width(filename):
 mp3_file = generate_filepath()+'example.mp3'
 duration = get_mp3_duration(mp3_file)
 # duration = 10  # in seconds
-fps = 30
+fps = 24
 # width, height = 1920, 110
 png_file = generate_filepath()+'example.png'
 xwidth, xheight = get_png_resolution_width(png_file)
