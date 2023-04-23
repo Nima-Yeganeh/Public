@@ -1,6 +1,6 @@
 docker exec -it docker-test5-wordpress-1 bash -c "wp --info"
 docker exec -it docker-test5-wordpress-1 bash -c "wp core config --dbname=wordpress --dbuser=wordpress --dbpass=your_wordpress_password --dbhost=db --dbprefix=wp_ --path=/var/www/html --allow-root"
-docker exec -it docker-test5-wordpress-1 bash -c "wp core install --url=http://domain.local --title='Just Another Blog' --admin_user=admin --admin_password=P@ssw0rd --admin_email=admin@domain.local --path=/var/www/html --allow-root --skip-email"
+docker exec -it docker-test5-wordpress-1 bash -c "wp core install --url=http://en.domain.local --title='Just Another Blog' --admin_user=admin --admin_password=P@ssw0rd --admin_email=admin@domain.local --path=/var/www/html --allow-root --skip-email"
 docker exec -it docker-test5-wordpress-1 bash -c "wp config list --allow-root"
 docker exec -it docker-test5-wordpress-1 bash -c "wp config set WP_POST_REVISIONS 0 --allow-root"
 docker exec -it docker-test5-wordpress-1 bash -c "wp core update --allow-root"
