@@ -20,3 +20,7 @@ docker exec -it docker-test5-wordpress-1 bash -c "wp disable-comments delete --t
 docker exec -it docker-test5-wordpress-1 bash -c "wp disable-comments settings --types=all --allow-root"
 docker exec -it docker-test5-wordpress-1 bash -c "wp plugin install wordpress-seo --activate --allow-root"
 docker exec -it docker-test5-wordpress-1 bash -c "wp disable-comments settings --types=all --allow-root"
+docker exec -it docker-test5-wordpress-1 bash -c "wp post delete $(wp post list --post_type='page' --format=ids --allow-root) --allow-root"
+docker exec -it docker-test5-wordpress-1 bash -c "wp post list --post_type=page --allow-root"
+docker exec -it docker-test5-wordpress-1 bash -c "wp post delete $(wp post list --post_type='post' --format=ids --allow-root) --allow-root"
+docker exec -it docker-test5-wordpress-1 bash -c "wp post list --post_type=post --allow-root"
