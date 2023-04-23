@@ -9,7 +9,7 @@ import openai
 
 openai.api_key = "sk-joeRLSZjsL9bOXI2PT3BlbkFJEc4ys7pAJe7SL82uqxtE"
 
-zurl = 'domain.local'
+zurl = 'en.domain.local'
 post_title = "Why should DevOps engineer learn kubernetes?"
 
 wp_url = 'http://'+zurl+'/xmlrpc.php'
