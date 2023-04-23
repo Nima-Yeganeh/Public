@@ -24,3 +24,8 @@ docker exec -it docker-test5-wordpress-1 bash -c "wp post delete $(wp post list 
 docker exec -it docker-test5-wordpress-1 bash -c "wp post list --post_type=page --allow-root"
 docker exec -it docker-test5-wordpress-1 bash -c "wp post delete $(wp post list --post_type='post' --format=ids --allow-root) --allow-root"
 docker exec -it docker-test5-wordpress-1 bash -c "wp post list --post_type=post --allow-root"
+docker exec -it docker-test5-wordpress-1 bash -c "wp config set WP_POST_REVISIONS 0 --allow-root"
+docker exec -it docker-test5-wordpress-1 bash -c "wp core update --allow-root"
+docker exec -it docker-test5-wordpress-1 bash -c "wp core update-db --allow-root"
+docker exec -it docker-test5-wordpress-1 bash -c "wp rewrite structure '/%postname%/' --allow-root"
+docker exec -it docker-test5-wordpress-1 bash -c "wp rewrite flush --allow-root"
