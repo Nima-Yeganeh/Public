@@ -1,6 +1,5 @@
 import os
 import openai
-
 openai.api_key = ("sk-joeRLSZjsL9bOXI2PT3BlbkFJEc4ys7pAJe7SL82uqxtE")
 
 original_string1 = __file__
