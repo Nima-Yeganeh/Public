@@ -1,0 +1,9 @@
+- Automation: The use of technology to perform tasks or processes that were previously completed manually by humans.
+- Robotic process automation (RPA): The use of software robots (or bots) to automate repetitive, rule-based tasks such as data entry and processing.
+- Artificial intelligence (AI): The ability of machines to perform tasks that typically require human-level intelligence, including problem-solving, decision-making, and pattern recognition.
+- Machine learning: A subset of AI that involves training algorithms to learn from data and improve performance on a particular task over time.
+- Natural language processing (NLP): The ability of machines to understand and interpret human language, enabling them to interact with humans through conversation or text.
+- Internet of Things (IoT): A network of physical devices and objects connected to the internet, allowing data to be collected and analyzed automatically.
+- Cloud computing: The delivery of computing services (such as storage, processing power, and applications) over the internet, allowing users to access them remotely without the need for physical hardware.
+- Process improvement: The optimization of existing workflows and processes through automation, resulting in increased efficiency, productivity, and cost savings.
+- Human-machine collaboration: The integration of human and machine capabilities to achieve better outcomes than either could achieve alone.
