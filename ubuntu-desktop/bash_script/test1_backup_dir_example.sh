@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Define the source and destination directories
-src="/home/user/myfiles"
-dst="/home/user/backup"
+src="test1/myfiles"
+dst="test1/backup"
 
 # Create the destination directory if it doesn't exist
 if [ ! -d "$dst" ]; then
