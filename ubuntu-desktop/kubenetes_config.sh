@@ -1,2 +1,4 @@
+sudo systemctl start docker
+sudo systemctl enable docker
 sudo swapoff -a
-sudo vi /etc/fstab
+cat /etc/fstab
