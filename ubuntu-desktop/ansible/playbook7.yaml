@@ -1,0 +1,26 @@
+---
+- name: Install MySQL and create database
+  hosts: webservers
+  become: yes
+  become_method: sudo
+
+  tasks:
+    - name: Install MySQL
+      apt:
+        name: mysql-server
+        state: present
+
+    - name: Create database
+      mysql_db:
+        login_host: localhost
+        login_user: root
+        login_password: "{{ mysql_root_password }}"
+        name: test
+        state: present
+
+    - name: Show database list
+      mysql_db:
+        login_host: localhost
+        login_user: root
+        login_password: "{{ mysql_root_password }}"
+        state: list
