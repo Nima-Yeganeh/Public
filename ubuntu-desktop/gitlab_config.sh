@@ -14,3 +14,4 @@ sudo gitlab-ctl status
 sudo gitlab-ctl start
 # sudo rm /etc/apt/sources.list.d/gitlab_gitlab-ce.list
 sudo cat /etc/gitlab/initial_root_password
+sudo cat /etc/gitlab/gitlab.rb | grep external_url
