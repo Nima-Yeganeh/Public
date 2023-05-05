@@ -8,4 +8,5 @@ deb https://packages.gitlab.com/gitlab/gitlab-ce/ubuntu/ focal main
 deb-src https://packages.gitlab.com/gitlab/gitlab-ce/ubuntu/ focal main
 EOF
 sudo apt update -y
+curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh | sudo bash
 sudo apt-get install gitlab-runner -y
