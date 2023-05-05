@@ -1,8 +1,8 @@
 ---
-- name: Change DNS resolver configuration on Ubuntu
+- name: Change DNS resolver configuration and ping 8.8.8.8 from webservers
   hosts: webservers
   become: yes
-  become_method: sudo
+  become_methond: sudo
 
   tasks:
     - name: Update resolv.conf
@@ -10,6 +10,6 @@
         src: resolv.conf.j2
         dest: /etc/resolv.conf
 
-     name: Ping 8.8.8.8
+    - name: Ping 8.8.8.8
       ping:
         dest: 8.8.8.8
