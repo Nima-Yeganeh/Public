@@ -4,7 +4,7 @@ webservers:
     webserver1:
       ansible_host: 192.168.244.160
     webserver2:
-      ansible_host: 192.168.1.101
+      ansible_host: 192.168.244.161
 
 databases:
   hosts:
