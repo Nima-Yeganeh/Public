@@ -1,0 +1,15 @@
+---
+- name: Change DNS resolver configuration on Ubuntu
+  hosts: webservers
+  become: yes
+  become_method: sudo
+
+  tasks:
+    - name: Update resolv.conf
+      template:
+        src: resolv.conf.j2
+        dest: /etc/resolv.conf
+
+     name: Ping 8.8.8.8
+      ping:
+        dest: 8.8.8.8
