@@ -1,0 +1,8 @@
+---
+- name: Example playbook
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Example task
+      command: echo "Hello, world!"
