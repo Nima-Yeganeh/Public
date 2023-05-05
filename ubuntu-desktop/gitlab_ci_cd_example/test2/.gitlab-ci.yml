@@ -1,0 +1,15 @@
+# .gitlab-ci.yml
+
+# Define the stages of the pipeline
+stages:
+  - test
+
+# Define the job that runs shell commands
+shell_commands:
+  stage: test
+  script:
+    - echo "Hello, world!"
+    - ls -anp
+    - mkdir my_test_dir
+    - ls
+    - pwd

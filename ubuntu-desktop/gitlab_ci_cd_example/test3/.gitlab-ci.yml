@@ -1,0 +1,12 @@
+# .gitlab-ci.yml
+
+# Define the stages of the pipeline
+stages:
+  - test
+
+# Define the job that runs the "Hello, world!" test using Docker
+hello_world:
+  image: alpine:latest # Use the official Alpine Linux image
+  stage: test
+  script:
+    - echo "Hello, world!"
