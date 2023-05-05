@@ -1,1 +1,1 @@
-ansible web_servers -m ping
+ansible webservers -m ping
