@@ -1,1 +1,2 @@
-sudo systemctl reload prometheus
+sudo systemctl restart prometheus
+sudo systemctl status prometheus
