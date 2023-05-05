@@ -11,5 +11,9 @@
         dest: /etc/resolv.conf
 
     - name: Ping 8.8.8.8
-      ping:
-        dest: 8.8.8.8
+      shell: ping -c 1 -w 1 8.8.8.8 > /dev/null && echo "Success" || echo "Failure"
+      register: ping_result
+
+    - name: Display ping result
+      debug:
+        var: ping_result.stdout_lines[0]
