@@ -1,0 +1,13 @@
+---
+- name: Check web server status
+  hosts: webservers
+  become: yes
+
+  tasks:
+    - name: Check if Apache is running
+      shell: systemctl status apache2
+      register: apache_status
+
+    - name: Print Apache status
+      debug:
+        var: apache_status.stdout_lines
