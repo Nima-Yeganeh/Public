@@ -1,0 +1,12 @@
+# .gitlab-ci.yml
+
+# Define the stages of the pipeline
+stages:
+  - test
+
+# Define the job that runs the test using Docker and Alpine Linux
+test:
+  image: alpine:latest # Use the official Alpine Linux image
+  stage: test
+  script:
+    - echo "Running the test..."

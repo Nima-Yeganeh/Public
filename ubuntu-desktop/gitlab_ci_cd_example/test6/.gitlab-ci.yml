@@ -1,0 +1,23 @@
+# .gitlab-ci.yml
+
+# Define the stages of the pipeline
+stages:
+  - test
+
+# Define the job that pings Google using Ubuntu Linux
+ubuntu_ping:
+  image: ubuntu:latest # Use the official Ubuntu Linux image as the test environment
+  stage: test
+  script:
+    - apt-get update # Update the package index
+    - apt-get install -y iputils-ping # Install the ping package
+    - ping -c 3 google.com # Ping Google and wait for 3 replies
+
+# Define the job that pings Google using Alpine Linux
+alpine_ping:
+  image: alpine:latest # Use the official Alpine Linux image as the test environment
+  stage: test
+  script:
+    - apk update # Update the package index
+    - apk add iputils # Install the ping package
+    - ping -c 3 google.com # Ping Google and wait for 3 replies

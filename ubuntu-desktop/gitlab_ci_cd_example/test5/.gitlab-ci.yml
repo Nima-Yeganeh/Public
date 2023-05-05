@@ -1,0 +1,14 @@
+# .gitlab-ci.yml
+
+# Define the stages of the pipeline
+stages:
+  - test
+
+# Define the job that runs the test using Docker and Ubuntu Linux
+test:
+  image: ubuntu:latest # Use the official Ubuntu Linux image
+  stage: test
+  script:
+    - apt-get update # Update the package index
+    - apt-get install -y curl # Install the curl package
+    - curl -I http://gitlab.example.com # Send a test HTTP request
