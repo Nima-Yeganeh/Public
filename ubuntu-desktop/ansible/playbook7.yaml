@@ -12,9 +12,19 @@
         name: mysql-server
         state: present
 
-    - name: Install MySQL client library for Python
+    - name: Install pip for Python 3
       apt:
-        name: python3-dev libmysqlclient-dev
+        name: python3-pip
+        state: present
+
+    - name: Install Python 3 development headers
+      apt:
+        name: python3-dev
+        state: present
+
+    - name: Install MySQL development headers
+      apt:
+        name: libmysqlclient-dev
         state: present
 
     - name: Install mysqlclient Python module
