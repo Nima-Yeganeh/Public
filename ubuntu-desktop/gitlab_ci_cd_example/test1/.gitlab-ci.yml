@@ -1,0 +1,8 @@
+# .gitlab-ci.yml
+stages:
+  - test
+
+hello_world:
+  stage: test
+  script:
+    - echo "Hello, world!"
