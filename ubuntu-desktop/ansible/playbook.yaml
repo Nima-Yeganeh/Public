@@ -1,8 +1,6 @@
 ---
 - name: Check web server status
   hosts: webservers
-  become: yes
-  become_method: sudo
   
   tasks:
     - name: Check if Apache is running
