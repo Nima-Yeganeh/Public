@@ -58,3 +58,4 @@
         login_host: localhost
         login_unix_socket: /var/run/mysqld/mysqld.sock
         state: list
+        name: "*"
