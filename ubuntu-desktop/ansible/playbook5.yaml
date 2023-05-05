@@ -1,0 +1,36 @@
+---
+- name: Install and Test Nginx on Ubuntu
+  hosts: webservers
+  become: yes
+  become_method: sudo
+
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: present
+
+    - name: Copy index.html file
+      copy:
+        content: "<html><body><h1>Test Page</h1></body></html>"
+        dest: /var/www/html/index.html
+
+    - name: Start Nginx service
+      systemd:
+        name: nginx
+        state: started
+        enabled: yes
+
+    - name: Check Nginx status
+      uri:
+        url: http://localhost/
+        status_code: 200
+      register: nginx_status
+
+    - name: Display Nginx status
+      debug:
+        var: nginx_status
