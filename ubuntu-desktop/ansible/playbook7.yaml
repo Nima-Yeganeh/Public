@@ -27,11 +27,10 @@
         name: libmysqlclient-dev
         state: present
 
-    - name: Install mysqlclient Python module
-      pip:
-        name: mysqlclient
+    - name: Install MySQL client library
+      apt:
+        name: python3-mysqldb
         state: present
-        executable: /usr/bin/python3
 
     - name: Set MySQL root password
       mysql_user:
