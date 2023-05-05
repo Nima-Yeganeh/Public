@@ -1,0 +1,28 @@
+---
+- name: Uninstall Apache and Install Nginx on Ubuntu
+  hosts: webservers
+  become: yes
+  become_method: sudo
+
+  tasks:
+    - name: Stop Apache service
+      systemd:
+        name: apache2
+        state: stopped
+        enabled: no
+
+    - name: Uninstall Apache
+      apt:
+        name: apache2
+        state: absent
+
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: present
+
+    - name: Start Nginx service
+      systemd:
+        name: nginx
+        state: started
+        enabled: yes
