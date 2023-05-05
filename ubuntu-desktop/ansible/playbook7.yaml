@@ -51,9 +51,10 @@
         name: test
         state: present
 
-    - name: Show database list
+    - name: Display list of MySQL databases
       mysql_db:
-        login_host: localhost
         login_user: root
         login_password: "{{ mysql_root_password }}"
+        login_host: localhost
+        login_unix_socket: /var/run/mysqld/mysqld.sock
         state: list
