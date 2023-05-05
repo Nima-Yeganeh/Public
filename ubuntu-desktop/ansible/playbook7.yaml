@@ -12,6 +12,17 @@
         name: mysql-server
         state: present
 
+    - name: Install MySQL client library for Python
+      apt:
+        name: python3-dev libmysqlclient-dev
+        state: present
+
+    - name: Install mysqlclient Python module
+      pip:
+        name: mysqlclient
+        state: present
+        executable: /usr/bin/python3
+
     - name: Set MySQL root password
       mysql_user:
         login_user: root
@@ -21,6 +32,7 @@
         host: localhost
         update_password: always
         check_implicit_admin: yes
+        login_unix_socket: /var/run/mysqld/mysqld.sock
 
     - name: Create database
       mysql_db:
