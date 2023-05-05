@@ -1,6 +1,7 @@
 ---
 - name: Install Apache on Ubuntu
   hosts: webservers
+  become: true
 
   tasks:
     - name: Update apt cache
