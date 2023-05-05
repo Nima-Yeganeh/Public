@@ -3,7 +3,6 @@
   hosts: webservers
   become: true
   become_method: sudo
-  become_pass: mypassword
 
   tasks:
     - name: Update apt cache
