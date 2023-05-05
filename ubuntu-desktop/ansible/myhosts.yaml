@@ -1,0 +1,12 @@
+---
+webservers:
+  hosts:
+    webserver1:
+      ansible_host: 192.168.1.100
+    webserver2:
+      ansible_host: 192.168.1.101
+
+databases:
+  hosts:
+    dbserver1:
+      ansible_host: 192.168.1.102
