@@ -3,8 +3,7 @@
   hosts: webservers
   become: yes
   become_method: sudo
-  become_pass: P@ssw0rd
-
+  
   tasks:
     - name: Check if Apache is running
       shell: systemctl status apache2
