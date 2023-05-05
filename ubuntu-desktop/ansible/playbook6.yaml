@@ -2,7 +2,7 @@
 - name: Change DNS resolver configuration and ping 8.8.8.8 from webservers
   hosts: webservers
   become: yes
-  become_methond: sudo
+  become_method: sudo
 
   tasks:
     - name: Update resolv.conf
