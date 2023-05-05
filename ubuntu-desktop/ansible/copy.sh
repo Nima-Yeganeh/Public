@@ -1,2 +1,2 @@
-sudo cp -f myhosts.yaml /etc/ansible/hosts/
-ls -anp /etc/ansible/hosts/
+sudo cp -f myhosts.yaml /etc/ansible/
+ls -anp /etc/ansible/
