@@ -1,0 +1,26 @@
+stages:
+  - build
+  - test
+
+build laptop:
+  image: alpine
+  stage: build
+  script:
+    - echo "Building a laptop"
+    - mkdir build
+    - touch build/computer.txt
+    - echo "Motherboard" >> build/computer.txt
+    - cat build/computer.txt
+    - echo "Keyboard" >> build/computer.txt
+    - cat build/computer.txt
+  artifacts:
+    paths:
+      - build
+
+test laptop:
+  image: alpine
+  stage: test
+  script:
+    - test -f build/computer.txt
+    - grep "Motherboard" build/computer.txt
+    - grep "Keyboard" build/computer.txt

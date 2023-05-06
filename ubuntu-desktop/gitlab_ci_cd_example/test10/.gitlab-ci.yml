@@ -1,0 +1,30 @@
+stages:
+  - build
+  - test
+
+variables:
+  BUILD_FILE_NAME: "laptop.txt"
+
+build laptop:
+  image: alpine
+  stage: build
+
+  script:
+    - echo "Building a laptop"
+    - mkdir build
+    - touch build/${BUILD_FILE_NAME}
+    - echo "Motherboard" >> build/${BUILD_FILE_NAME}
+    - cat build/${BUILD_FILE_NAME}
+    - echo "Keyboard" >> build/${BUILD_FILE_NAME}
+    - cat build/${BUILD_FILE_NAME}
+  artifacts:
+    paths:
+      - build
+
+test laptop:
+  image: alpine
+  stage: test
+  script:
+    - test -f build/${BUILD_FILE_NAME}
+    - grep "Motherboard" build/${BUILD_FILE_NAME}
+    - grep "Keyboard" build/${BUILD_FILE_NAME}

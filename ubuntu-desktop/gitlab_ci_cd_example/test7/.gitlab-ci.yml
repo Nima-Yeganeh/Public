@@ -1,0 +1,26 @@
+# Define the pipeline stages
+stages:
+  - build
+  - test
+  - deploy
+
+# Define the job to build the Django application
+build:
+  stage: build
+  image: python:3.9
+  script:
+    - apt-get update && apt-get install -y python3-dev default-libmysqlclient-dev build-essential
+
+# Define the job to run tests
+test:
+  stage: test
+  image: python:3.9
+  script:
+    - apt-get update && apt-get install -y python3-dev default-libmysqlclient-dev build-essential
+
+# Define the job to deploy the Django application
+deploy:
+  stage: deploy
+  image: python:3.9
+  script:
+    - apt-get update && apt-get install -y sshpass
