@@ -33,7 +33,9 @@ post.terms_names = {
 }
 
 # Upload the image file
-image_path = 'C:/Users/Nima/Desktop/nima_git/Public/wordpress/python/file1.jpg'
+# image_path = 'C:/Users/Nima/Desktop/nima_git/Public/wordpress/python/file1.jpg'
+image_path = 'file1.jpg'
+
 with open(image_path, 'rb') as img:
     data = img.read()
 filename = os.path.basename(image_path)
