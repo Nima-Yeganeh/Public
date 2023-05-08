@@ -1,3 +1,4 @@
+// npm install axios
 const axios = require("axios");
 
 axios.get("https://jsonplaceholder.typicode.com/posts/1")
