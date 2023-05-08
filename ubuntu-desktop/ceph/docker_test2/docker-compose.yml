@@ -2,10 +2,12 @@ version: '3'
 
 services:
   mon:
-    image: ceph/daemon:latest
+    image: ceph/ceph:v16.2.5
     command: mon
     environment:
-      - CEPH_PUBLIC_NETWORK=0.0.0.0/0
+      - MON_IP=172.16.238.10
+      - CEPH_PUBLIC_NETWORK=172.16.238.0/24
+      - CEPH_CLUSTER_NETWORK=172.16.238.0/24
     volumes:
       - ceph-config:/etc/ceph
       - ceph-data:/var/lib/ceph
@@ -13,22 +15,18 @@ services:
       - "6789:6789"
     networks:
       - ceph-net
-    deploy:
-      mode: global
 
   mgr:
-    image: ceph/daemon:latest
+    image: ceph/ceph:v16.2.5
     command: mgr
     volumes:
       - ceph-config:/etc/ceph
       - ceph-data:/var/lib/ceph
     networks:
       - ceph-net
-    deploy:
-      mode: global
 
   osd:
-    image: ceph/daemon:latest
+    image: ceph/ceph:v16.2.5
     command: osd
     environment:
       - OSD_FORCE_ZAP=1
@@ -40,9 +38,6 @@ services:
       - /dev:/dev
     networks:
       - ceph-net
-    deploy:
-      mode: replicated
-      replicas: 3
 
 volumes:
   ceph-config:
@@ -50,3 +45,8 @@ volumes:
 
 networks:
   ceph-net:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.16.238.0/24
