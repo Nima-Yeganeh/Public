@@ -1,0 +1,53 @@
+version: '3'
+
+services:
+  mon:
+    image: ceph/daemon:latest
+    command: mon
+    environment:
+      - CEPH_PUBLIC_NETWORK=0.0.0.0/0
+    volumes:
+      - ceph-config:/etc/ceph
+      - ceph-data:/var/lib/ceph
+    ports:
+      - "6789:6789"
+    networks:
+      - ceph-net
+    deploy:
+      mode: global
+
+  mgr:
+    image: ceph/daemon:latest
+    command: mgr
+    volumes:
+      - ceph-config:/etc/ceph
+      - ceph-data:/var/lib/ceph
+    networks:
+      - ceph-net
+    deploy:
+      mode: global
+
+  osd:
+    image: ceph/daemon:latest
+    command: osd
+    environment:
+      - OSD_FORCE_ZAP=1
+      - OSD_DEVICE=/dev/sdb
+      - OSD_TYPE=disk
+    volumes:
+      - ceph-config:/etc/ceph
+      - ceph-data:/var/lib/ceph
+      - /dev:/dev
+    networks:
+      - ceph-net
+    deploy:
+      mode: replicated
+      replicas: 3
+
+volumes:
+  ceph-config:
+  ceph-data:
+
+networks:
+  ceph-net:
+  
