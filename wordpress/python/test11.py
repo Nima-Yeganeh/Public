@@ -1,2 +1,2 @@
-name = input("What is the code? ")
-print("Code: " + name + "")
+xcode = input("What is the code? ")
+print("Code: " + xcode + "")

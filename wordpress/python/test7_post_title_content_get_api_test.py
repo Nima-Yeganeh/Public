@@ -7,7 +7,10 @@ from wordpress_xmlrpc import Client, WordPressPost
 from wordpress_xmlrpc.methods.posts import NewPost
 import openai
 
-openai.api_key = "sk-joeRLSZjsL9bOXI2PT3BlbkFJEc4ys7pAJe7SL82uqxtE"
+xcode = input("What is the code? ")
+# print("Code: " + xcode + "")
+
+openai.api_key = "sk-"+xcode+"joeRLSZjsL9bOXI2PT3BlbkFJEc4ys7pAJe7SL82uqxtE"
 
 zurl = 'domain.local'
 post_title = "Why should DevOps engineer learn kubernetes?"
