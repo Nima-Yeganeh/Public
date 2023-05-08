@@ -3,7 +3,7 @@ from wordpress_xmlrpc import Client, WordPressPost
 from wordpress_xmlrpc.methods.posts import NewPost
 
 # Define the WordPress credentials
-url = 'http://domain.local/xmlrpc.php'
+url = 'http://en.domain.local/xmlrpc.php'
 username = 'admin'
 password = 'P@ssw0rd'
 
