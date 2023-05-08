@@ -1,2 +1,1 @@
-go build
-./main
+go run main.go
