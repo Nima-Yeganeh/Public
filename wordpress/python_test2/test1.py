@@ -4,8 +4,8 @@ import time
 import datetime
 import random
 
-# xcode = input("What is the code? ")
-# openai.api_key = "sk-"+xcode+"joeRLSZjsL9bOXI2PT3BlbkFJEc4ys7pAJe7SL82uqxtE"
+xcode = input("What is the code? ")
+openai.api_key = "sk-"+xcode+"joeRLSZjsL9bOXI2PT3BlbkFJEc4ys7pAJe7SL82uqxtE"
 
 original_string1 = __file__
 new_string1 = original_string1.replace('test1.py', 'filename1.txt')
@@ -64,4 +64,33 @@ random.shuffle(data)
 with open(file_path4, 'w') as outfile:
     for line in data:
         outfile.write(line + '\n')
+
+def generate_response(question):
+    response = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[
+                {"role": "system", "content": "You are a chatbot"},
+                {"role": "user", "content": question},
+            ]
+    )
+    result = ''
+    for choice in response.choices:
+        result += choice.message.content
+    return(result)
+
+def generate_filename(newfilename):
+    original_string1 = __file__
+    new_string1 = original_string1.replace(os.path.basename(__file__), newfilename+'.MD')
+    newfile_path1 = new_string1
+    return(newfile_path1)
+
+with open(file_path4, 'r') as f:
+    for line in f:
+        time.sleep(30)
+        prompt = line.strip()
+        print(prompt)
+        story = generate_response(prompt)
+        print(story)
+        with open(generate_filename(prompt), 'w') as output_file:
+            output_file.write(story + '\n')
 
