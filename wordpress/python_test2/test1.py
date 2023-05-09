@@ -97,6 +97,7 @@ def generate_filename(newfilename):
 
 with open(file_path4, 'r') as f:
     for line in f:
+        print('started...')
         time.sleep(30)
         prompt = line.strip()
         print(prompt)
@@ -113,4 +114,14 @@ with open(file_path4, 'r') as f:
             post.content = story
             post.post_status = 'publish'
             client.call(NewPost(post))
+            zurl = 'en.domain.local'
+            post_title = prompt
+            wp_url = 'http://'+zurl+'/xmlrpc.php'
+            client = Client(wp_url, wp_username, wp_password)
+            post = WordPressPost()
+            post.title = post_title
+            post.content = story
+            post.post_status = 'publish'
+            client.call(NewPost(post))
+            print('done!')
 
