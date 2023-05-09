@@ -4,7 +4,7 @@ import time
 import datetime
 
 # xcode = input("What is the code? ")
-openai.api_key = "sk-"+xcode+"joeRLSZjsL9bOXI2PT3BlbkFJEc4ys7pAJe7SL82uqxtE"
+# openai.api_key = "sk-"+xcode+"joeRLSZjsL9bOXI2PT3BlbkFJEc4ys7pAJe7SL82uqxtE"
 
 original_string1 = __file__
 new_string1 = original_string1.replace('test1.py', 'filename1.txt')
