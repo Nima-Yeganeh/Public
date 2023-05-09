@@ -56,3 +56,10 @@ with open(file_path1, 'r') as file1, open(file_path2, 'r') as file2, open(file_p
         for string in faqs:
             # print(string)
             output_file.write(string + '\n')
+
+with open(file_path3, 'r') as infile:
+    data = [line.strip() for line in infile]
+random.shuffle(data)
+with open(file_path4, 'w') as outfile:
+    for line in data:
+        outfile.write(line + '\n')
