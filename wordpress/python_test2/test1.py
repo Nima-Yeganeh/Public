@@ -103,25 +103,25 @@ with open(file_path4, 'r') as f:
         print(prompt)
         story = generate_response(prompt)
         print(story)
-        with open(generate_filename(prompt), 'w') as output_file:
-            output_file.write(story + '\n')
-            zurl = 'domain.local'
-            post_title = prompt
-            wp_url = 'http://'+zurl+'/xmlrpc.php'
-            client = Client(wp_url, wp_username, wp_password)
-            post = WordPressPost()
-            post.title = post_title
-            post.content = story
-            post.post_status = 'publish'
-            client.call(NewPost(post))
-            zurl = 'en.domain.local'
-            post_title = prompt
-            wp_url = 'http://'+zurl+'/xmlrpc.php'
-            client = Client(wp_url, wp_username, wp_password)
-            post = WordPressPost()
-            post.title = post_title
-            post.content = story
-            post.post_status = 'publish'
-            client.call(NewPost(post))
-            print('done!')
+        # with open(generate_filename(prompt), 'w') as output_file:
+        output_file.write(story + '\n')
+        zurl = 'domain.local'
+        post_title = prompt
+        wp_url = 'http://'+zurl+'/xmlrpc.php'
+        client = Client(wp_url, wp_username, wp_password)
+        post = WordPressPost()
+        post.title = post_title
+        post.content = story
+        post.post_status = 'publish'
+        client.call(NewPost(post))
+        zurl = 'en.domain.local'
+        post_title = prompt
+        wp_url = 'http://'+zurl+'/xmlrpc.php'
+        client = Client(wp_url, wp_username, wp_password)
+        post = WordPressPost()
+        post.title = post_title
+        post.content = story
+        post.post_status = 'publish'
+        client.call(NewPost(post))
+        print('done!')
 
