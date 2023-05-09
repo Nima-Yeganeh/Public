@@ -104,7 +104,7 @@ with open(file_path4, 'r') as f:
         story = generate_response(prompt)
         print(story)
         # with open(generate_filename(prompt), 'w') as output_file:
-        output_file.write(story + '\n')
+        # output_file.write(story + '\n')
         zurl = 'domain.local'
         post_title = prompt
         wp_url = 'http://'+zurl+'/xmlrpc.php'
