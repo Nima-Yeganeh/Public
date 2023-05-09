@@ -1,8 +1,19 @@
+# python.exe -m pip install --upgrade pip
+# pip install --upgrade pip
+# pip install python-wordpress-xmlrpc
+# pip install --upgrade --force-reinstall python-wordpress-xmlrpc
+# pip install openai
+
 import os
 import openai
 import time
 import datetime
 import random
+from wordpress_xmlrpc import Client, WordPressPost
+from wordpress_xmlrpc.methods.posts import NewPost
+
+wp_username = 'admin'
+wp_password = 'P@ssw0rd'
 
 xcode = input("What is the code? ")
 openai.api_key = "sk-"+xcode+"joeRLSZjsL9bOXI2PT3BlbkFJEc4ys7pAJe7SL82uqxtE"
@@ -93,4 +104,13 @@ with open(file_path4, 'r') as f:
         print(story)
         with open(generate_filename(prompt), 'w') as output_file:
             output_file.write(story + '\n')
+            zurl = 'domain.local'
+            post_title = prompt
+            wp_url = 'http://'+zurl+'/xmlrpc.php'
+            client = Client(wp_url, wp_username, wp_password)
+            post = WordPressPost()
+            post.title = post_title
+            post.content = story
+            post.post_status = 'publish'
+            client.call(NewPost(post))
 
