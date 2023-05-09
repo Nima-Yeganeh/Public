@@ -1,0 +1,83 @@
+Datacenter Service Design and Implementation
+Automation
+ITIL
+Agile
+Monitoring Backup Services
+Enterprise Directory Services
+Network Storage Infrastructure
+Logging SIEM
+File Storage
+Domain Directory Services
+VMware
+CDN
+CentOS
+Debian
+Ubuntu
+Shell
+Python
+SQL
+NoSQL
+GitLab
+Change Incident Management
+IP Networking
+Routing
+Switching
+Virtualization
+Jenkins
+Git
+Windows Server
+Bash Scripting
+Puppet
+Microsoft SQL
+MySQL
+Terraform
+SaltStack
+Redis
+Nginx
+Apache
+Cloud
+Cisco
+Juniper
+FortiGate
+NAS
+SAN
+AWS
+Cloudflare
+Kibana
+Zabbix
+Helm
+Travis
+ELK
+Jira
+Confluence
+SONET
+OLT ONT
+xDSL
+PPPoE
+IPoE
+PPTP
+L2TP
+GRE
+CGNAT
+MAP-T
+ISG
+RADIUS
+DHCP
+OSPF
+EIGRP
+ISIS
+BGP
+MPLS
+BFD
+QoS
+Segment Routing
+VPLS
+DMVPN
+EVPN
+Cisco Nexus
+Cisco ASR
+Cisco NCS
+COBIT
+Fiber-Optic Implementation
+Peering and Transit
+F5 Load Balancers
