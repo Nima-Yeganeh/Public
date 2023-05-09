@@ -2,6 +2,7 @@ import os
 import openai
 import time
 import datetime
+import random
 
 # xcode = input("What is the code? ")
 # openai.api_key = "sk-"+xcode+"joeRLSZjsL9bOXI2PT3BlbkFJEc4ys7pAJe7SL82uqxtE"
@@ -63,3 +64,4 @@ random.shuffle(data)
 with open(file_path4, 'w') as outfile:
     for line in data:
         outfile.write(line + '\n')
+
