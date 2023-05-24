@@ -29,7 +29,6 @@ services:
       dockerfile: Dockerfile
     volumes:
       - wordpress1_content:/var/www/html/wp-content
-      - ./htaccess:/var/www/html/.htaccess:ro
     restart: always
     environment:
       WORDPRESS_DB_HOST: db1:3306
@@ -51,7 +50,6 @@ services:
       - wordpress1
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
-      - ./htaccess:/var/www/html/.htaccess:ro
     ports:
       - "80:80"
   db2:
@@ -83,7 +81,6 @@ services:
       dockerfile: Dockerfile
     volumes:
       - wordpress2_content:/var/www/html/wp-content
-      - ./htaccess:/var/www/html/.htaccess:ro
     restart: always
     environment:
       WORDPRESS_DB_HOST: db2:3306
