@@ -1,5 +1,7 @@
 bash commands_host1_ver2.sh
 bash commands_host2_ver2.sh
+bash commands_host3_ver2.sh
 bash commands_host1_ver2_update1.sh
 bash commands_host2_ver2_update1.sh
+bash commands_host3_ver2_update1.sh
 
