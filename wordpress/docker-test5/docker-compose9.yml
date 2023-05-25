@@ -54,7 +54,6 @@ services:
       - ./htaccess:/var/www/html/.htaccess:ro
     ports:
       - "80:80"
-
   db2:
     image: mysql:5.7
     volumes:
@@ -99,7 +98,6 @@ services:
         define('WP_CACHE_KEY_SALT', 'your-unique-salt-here');
         define('WP_CACHE', true);
       REDIS_HOST: redis2
-
   db3:
     image: mysql:5.7
     volumes:
@@ -144,7 +142,6 @@ services:
         define('WP_CACHE_KEY_SALT', 'your-unique-salt-here');
         define('WP_CACHE', true);
       REDIS_HOST: redis3
-
 volumes:
   db1_data:
   wordpress1_content:
