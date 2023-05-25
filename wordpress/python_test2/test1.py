@@ -98,7 +98,7 @@ def generate_filename(newfilename):
 with open(file_path4, 'r') as f:
     for line in f:
         print('started...')
-        time.sleep(30)
+        # time.sleep(30)
         prompt = line.strip()
         print(prompt)
         story = generate_response(prompt)
@@ -142,4 +142,5 @@ with open(file_path4, 'r') as f:
         post.post_status = 'publish'
         client.call(NewPost(post))
         print('done!')
+        time.sleep(30)
 
