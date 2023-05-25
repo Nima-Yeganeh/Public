@@ -8,6 +8,6 @@ read template_number
 echo "Template number: $template_number"
 
 tempfile="docker_compose_template"
-cat $tempfile
-
+# cat $tempfile
+cat $tempfile | sed 's/db1/db2/g'
 # cat $tempfile | sed 's/db1/db'$template_number'/g' | sed 's/redis1/redis'$template_number'/g' | sed 's/wordpress1/wordpress'$template_number'/g'
