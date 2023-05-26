@@ -26,3 +26,11 @@ wordpress7
 db8
 redis8
 wordpress8
+# Japanese (ja)
+db9
+redis9
+wordpress9
+# Turkish (tr)
+db10
+redis10
+wordpress10

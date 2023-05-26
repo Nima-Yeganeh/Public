@@ -6,3 +6,5 @@ bash commands_host5_ver3.sh
 bash commands_host6_ver3.sh
 bash commands_host7_ver3.sh
 bash commands_host8_ver3.sh
+bash commands_host9_ver3.sh
+bash commands_host10_ver3.sh

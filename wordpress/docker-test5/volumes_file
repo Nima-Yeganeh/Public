@@ -23,3 +23,9 @@ volumes:
   db8_data:
   wordpress8_content:
   redis8_data:
+  db9_data:
+  wordpress9_content:
+  redis9_data:
+  db10_data:
+  wordpress10_content:
+  redis10_data:

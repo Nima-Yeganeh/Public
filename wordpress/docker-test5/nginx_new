@@ -1,34 +1,34 @@
     server {
         listen 80;
-        server_name en.domain.local;
+        server_name ja.domain.local;
         client_max_body_size 100M;
 
         location / {
-            proxy_pass http://wordpress2:80;
+            proxy_pass http://wordpress9:80;
             proxy_set_header Host $host;
             proxy_set_header X-Real-IP $remote_addr;
             proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         }
 
-        location /redis2 {
+        location /redis9 {
             internal;
-            proxy_pass http://redis2:6379;
+            proxy_pass http://redis9:6379;
         }
     }    
     server {
         listen 80;
-        server_name ru.domain.local;
+        server_name tr.domain.local;
         client_max_body_size 100M;
 
         location / {
-            proxy_pass http://wordpress3:80;
+            proxy_pass http://wordpress10:80;
             proxy_set_header Host $host;
             proxy_set_header X-Real-IP $remote_addr;
             proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         }
 
-        location /redis3 {
+        location /redis10 {
             internal;
-            proxy_pass http://redis3:6379;
+            proxy_pass http://redis10:6379;
         }
     }    

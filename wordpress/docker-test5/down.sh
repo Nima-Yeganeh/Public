@@ -28,3 +28,11 @@ docker volume rm docker-test5_db8_data
 docker volume rm docker-test5_redis8_data
 docker volume rm docker-test5_wordpress8_content
 
+docker volume rm docker-test5_db9_data
+docker volume rm docker-test5_redis9_data
+docker volume rm docker-test5_wordpress9_content
+
+docker volume rm docker-test5_db10_data
+docker volume rm docker-test5_redis10_data
+docker volume rm docker-test5_wordpress10_content
+
