@@ -128,8 +128,8 @@ with open(file_path4, 'r') as f:
         zurl = 'ru.domain.local'
         post_title = generate_response("Translate in " + zlanguage + " >> " + prompt)
         print(post_title)
-        story = generate_response(prompt + " in " + zlanguage)
-        print(story)
+        story = generate_response(prompt + " >> Answer in " + zlanguage)
+        # print(story)
         wp_url = 'http://'+zurl+'/xmlrpc.php'
         client = Client(wp_url, wp_username, wp_password)
         post = WordPressPost()
