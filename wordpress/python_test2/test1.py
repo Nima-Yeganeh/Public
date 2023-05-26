@@ -138,11 +138,12 @@ with open(file_path4, 'r') as f:
         post.content = story
         post.post_status = 'publish'
         client.call(NewPost(post))
-        print(generate_content("Russian (ru) Language", "ru.domain.local", prompt, 60))
-        print(generate_content("Spanish (es) Language", "es.domain.local", prompt, 60))
-        print(generate_content("Portuguese (pt) Language", "pt.domain.local", prompt, 60))
-        print(generate_content("Indonesian (id) Language", "id.domain.local", prompt, 60))
-        print(generate_content("French (fr) Language", "fr.domain.local", prompt, 60))
-        print(generate_content("German (de) Language", "de.domain.local", prompt, 60))
+        print(generate_content("Russian (ru) Language", "ru.domain.local", prompt, 90))
+        print(generate_content("Spanish (es) Language", "es.domain.local", prompt, 90))
+        print(generate_content("Portuguese (pt) Language", "pt.domain.local", prompt, 90))
+        print(generate_content("Indonesian (id) Language", "id.domain.local", prompt, 90))
+        print(generate_content("French (fr) Language", "fr.domain.local", prompt, 90))
+        print(generate_content("German (de) Language", "de.domain.local", prompt, 90))
         print('**** Done ****')
         time.sleep(0)
+
