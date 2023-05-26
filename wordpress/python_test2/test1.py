@@ -95,8 +95,8 @@ def generate_filename(newfilename):
     newfile_path1 = new_string1
     return(newfile_path1)
 
-def generate_content(zlanguage, zurl, prompt):
-    time.sleep(0)
+def generate_content(zlanguage, zurl, prompt, sleep_time):
+    time.sleep(sleep_time)
     post_title = generate_response("Translate in " + zlanguage + " >> " + prompt)
     # print(post_title)
     story = generate_response(prompt + " >> Answer in " + zlanguage)
@@ -138,11 +138,7 @@ with open(file_path4, 'r') as f:
         post.content = story
         post.post_status = 'publish'
         client.call(NewPost(post))
-        ####
-        post_title = generate_content("Russian (ru) Language", "ru.domain.local", prompt)
-        print(post_title)
-        ####
+        print(generate_content("Russian (ru) Language", "ru.domain.local", prompt, 30))
+        print(generate_content("Spanish (es) Language", "es.domain.local", prompt, 30))
         print('done!')
-        time.sleep(60)
-        ####
-        
+        time.sleep(0)
