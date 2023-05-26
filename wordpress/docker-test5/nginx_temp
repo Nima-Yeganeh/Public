@@ -14,5 +14,4 @@
             internal;
             proxy_pass http://redis1:6379;
         }
-    }
-    
+    }    
