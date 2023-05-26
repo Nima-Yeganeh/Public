@@ -11,3 +11,15 @@ volumes:
   db4_data:
   wordpress4_content:
   redis4_data:
+  db5_data:
+  wordpress5_content:
+  redis5_data:
+  db6_data:
+  wordpress6_content:
+  redis6_data:
+  db7_data:
+  wordpress7_content:
+  redis7_data:
+  db8_data:
+  wordpress8_content:
+  redis8_data:
