@@ -123,8 +123,11 @@ with open(file_path4, 'r') as f:
         post.content = story
         post.post_status = 'publish'
         client.call(NewPost(post))
+        ####
+        zlanguage = "Russian (ru) Language"
         zurl = 'ru.domain.local'
-        post_title = prompt
+        post_title = generate_response("Translate in " + zlanguage + " >> " + prompt)
+        story = generate_response(prompt + " in " + zlanguage)
         wp_url = 'http://'+zurl+'/xmlrpc.php'
         client = Client(wp_url, wp_username, wp_password)
         post = WordPressPost()
@@ -132,15 +135,7 @@ with open(file_path4, 'r') as f:
         post.content = story
         post.post_status = 'publish'
         client.call(NewPost(post))
-        zurl = 'es.domain.local'
-        post_title = prompt
-        wp_url = 'http://'+zurl+'/xmlrpc.php'
-        client = Client(wp_url, wp_username, wp_password)
-        post = WordPressPost()
-        post.title = post_title
-        post.content = story
-        post.post_status = 'publish'
-        client.call(NewPost(post))
+        ####
         print('done!')
-        time.sleep(30)
-
+        time.sleep(60)
+        ####
