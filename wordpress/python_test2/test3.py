@@ -95,21 +95,6 @@ def generate_filename(newfilename):
     newfile_path1 = new_string1
     return(newfile_path1)
 
-def generate_content(zlanguage, zurl, prompt):
-    time.sleep(0)
-    post_title = generate_response("Translate in " + zlanguage + " >> " + prompt)
-    # print(post_title)
-    story = generate_response(prompt + " >> Answer in " + zlanguage)
-    # print(story)
-    wp_url = 'http://'+zurl+'/xmlrpc.php'
-    client = Client(wp_url, wp_username, wp_password)
-    post = WordPressPost()
-    post.title = post_title
-    post.content = story
-    post.post_status = 'publish'
-    client.call(NewPost(post))    
-    return(post_title)
-
 with open(file_path4, 'r') as f:
     for line in f:
         print('started...')
@@ -139,8 +124,20 @@ with open(file_path4, 'r') as f:
         post.post_status = 'publish'
         client.call(NewPost(post))
         ####
-        post_title = generate_content("Russian (ru) Language", "ru.domain.local", prompt)
+        time.sleep(0)
+        zlanguage = "Russian (ru) Language"
+        zurl = 'ru.domain.local'
+        post_title = generate_response("Translate in " + zlanguage + " >> " + prompt)
         print(post_title)
+        story = generate_response(prompt + " >> Answer in " + zlanguage)
+        # print(story)
+        wp_url = 'http://'+zurl+'/xmlrpc.php'
+        client = Client(wp_url, wp_username, wp_password)
+        post = WordPressPost()
+        post.title = post_title
+        post.content = story
+        post.post_status = 'publish'
+        client.call(NewPost(post))
         ####
         print('done!')
         time.sleep(60)
