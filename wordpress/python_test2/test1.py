@@ -144,6 +144,9 @@ with open(file_path4, 'r') as f:
         print(generate_content("Indonesian (id) Language", "id.domain.local", prompt, 90))
         print(generate_content("French (fr) Language", "fr.domain.local", prompt, 90))
         print(generate_content("German (de) Language", "de.domain.local", prompt, 90))
+        print(generate_content("Japanese (ja) Language", "ja.domain.local", prompt, 90))
+        print(generate_content("Turkish (tr) Language", "tr.domain.local", prompt, 90))
+        
         print('**** Done ****')
         time.sleep(0)
 
