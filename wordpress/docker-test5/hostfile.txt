@@ -1,0 +1,17 @@
+185.223.235.68 en.domain.local
+185.223.235.68 ru.domain.local
+185.223.235.68 es.domain.local
+185.223.235.68 pt.domain.local
+185.223.235.68 id.domain.local
+185.223.235.68 fr.domain.local
+185.223.235.68 de.domain.local
+185.223.235.68 ja.domain.local
+185.223.235.68 tr.domain.local
+185.223.235.68 zh.domain.local
+185.223.235.68 it.domain.local
+185.223.235.68 pl.domain.local
+185.223.235.68 nl.domain.local
+185.223.235.68 ko.domain.local
+185.223.235.68 vi.domain.local
+185.223.235.68 th.domain.local
+185.223.235.68 sv.domain.local
