@@ -1,0 +1,13 @@
+volumes:
+  db1_data:
+  wordpress1_content:
+  redis1_data:
+  db2_data:
+  wordpress2_content:
+  redis2_data:
+  db3_data:
+  wordpress3_content:
+  redis3_data:
+  db4_data:
+  wordpress4_content:
+  redis4_data:
