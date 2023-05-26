@@ -112,7 +112,7 @@ def generate_content(zlanguage, zurl, prompt, sleep_time):
 
 with open(file_path4, 'r') as f:
     for line in f:
-        print('started...')
+        print('**** Started ****')
         # time.sleep(30)
         prompt = line.strip()
         print(prompt)
@@ -138,7 +138,7 @@ with open(file_path4, 'r') as f:
         post.content = story
         post.post_status = 'publish'
         client.call(NewPost(post))
-        print(generate_content("Russian (ru) Language", "ru.domain.local", prompt, 30))
-        print(generate_content("Spanish (es) Language", "es.domain.local", prompt, 30))
-        print('done!')
+        print(generate_content("Russian (ru) Language", "ru.domain.local", prompt, 60))
+        print(generate_content("Spanish (es) Language", "es.domain.local", prompt, 60))
+        print('**** Done ****')
         time.sleep(0)
