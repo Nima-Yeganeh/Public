@@ -8,3 +8,11 @@ bash commands_host7_ver3.sh
 bash commands_host8_ver3.sh
 bash commands_host9_ver3.sh
 bash commands_host10_ver3.sh
+bash commands_host11_ver3.sh
+bash commands_host12_ver3.sh
+bash commands_host13_ver3.sh
+bash commands_host14_ver3.sh
+bash commands_host15_ver3.sh
+bash commands_host16_ver3.sh
+bash commands_host17_ver3.sh
+bash commands_host18_ver3.sh

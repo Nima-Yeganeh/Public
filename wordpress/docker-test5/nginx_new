@@ -1,34 +1,136 @@
     server {
         listen 80;
-        server_name ja.domain.local;
+        server_name zh.domain.local;
         client_max_body_size 100M;
 
         location / {
-            proxy_pass http://wordpress9:80;
+            proxy_pass http://wordpress11:80;
             proxy_set_header Host $host;
             proxy_set_header X-Real-IP $remote_addr;
             proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         }
 
-        location /redis9 {
+        location /redis11 {
             internal;
-            proxy_pass http://redis9:6379;
+            proxy_pass http://redis11:6379;
         }
     }    
     server {
         listen 80;
-        server_name tr.domain.local;
+        server_name it.domain.local;
         client_max_body_size 100M;
 
         location / {
-            proxy_pass http://wordpress10:80;
+            proxy_pass http://wordpress12:80;
             proxy_set_header Host $host;
             proxy_set_header X-Real-IP $remote_addr;
             proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         }
 
-        location /redis10 {
+        location /redis12 {
             internal;
-            proxy_pass http://redis10:6379;
+            proxy_pass http://redis12:6379;
+        }
+    }    
+    server {
+        listen 80;
+        server_name pl.domain.local;
+        client_max_body_size 100M;
+
+        location / {
+            proxy_pass http://wordpress13:80;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        }
+
+        location /redis13 {
+            internal;
+            proxy_pass http://redis13:6379;
+        }
+    }    
+    server {
+        listen 80;
+        server_name nl.domain.local;
+        client_max_body_size 100M;
+
+        location / {
+            proxy_pass http://wordpress14:80;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        }
+
+        location /redis14 {
+            internal;
+            proxy_pass http://redis14:6379;
+        }
+    }    
+    server {
+        listen 80;
+        server_name ko.domain.local;
+        client_max_body_size 100M;
+
+        location / {
+            proxy_pass http://wordpress15:80;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        }
+
+        location /redis15 {
+            internal;
+            proxy_pass http://redis15:6379;
+        }
+    }    
+    server {
+        listen 80;
+        server_name vi.domain.local;
+        client_max_body_size 100M;
+
+        location / {
+            proxy_pass http://wordpress16:80;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        }
+
+        location /redis16 {
+            internal;
+            proxy_pass http://redis16:6379;
+        }
+    }    
+    server {
+        listen 80;
+        server_name th.domain.local;
+        client_max_body_size 100M;
+
+        location / {
+            proxy_pass http://wordpress17:80;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        }
+
+        location /redis17 {
+            internal;
+            proxy_pass http://redis17:6379;
+        }
+    }    
+    server {
+        listen 80;
+        server_name sv.domain.local;
+        client_max_body_size 100M;
+
+        location / {
+            proxy_pass http://wordpress18:80;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        }
+
+        location /redis18 {
+            internal;
+            proxy_pass http://redis18:6379;
         }
     }    

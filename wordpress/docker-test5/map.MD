@@ -34,3 +34,35 @@ wordpress9
 db10
 redis10
 wordpress10
+# Chinese (zh)
+db11
+redis11
+wordpress11
+# Italian (it)
+db12
+redis12
+wordpress12
+# Polish (pl)
+db13
+redis13
+wordpress13
+# Dutch (nl)
+db14
+redis14
+wordpress14
+# Korean (ko)
+db15
+redis15
+wordpress15
+# Vietnamese (vi)
+db16
+redis16
+wordpress16
+# Thai (th)
+db17
+redis17
+wordpress17
+# Swedish (sv)
+db18
+redis18
+wordpress18

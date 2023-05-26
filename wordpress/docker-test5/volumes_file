@@ -29,3 +29,27 @@ volumes:
   db10_data:
   wordpress10_content:
   redis10_data:
+  db11_data:
+  wordpress11_content:
+  redis11_data:
+  db12_data:
+  wordpress12_content:
+  redis12_data:
+  db13_data:
+  wordpress13_content:
+  redis13_data:
+  db14_data:
+  wordpress14_content:
+  redis14_data:
+  db15_data:
+  wordpress15_content:
+  redis15_data:
+  db16_data:
+  wordpress16_content:
+  redis16_data:
+  db17_data:
+  wordpress17_content:
+  redis17_data:
+  db18_data:
+  wordpress18_content:
+  redis18_data:

@@ -36,3 +36,35 @@ docker volume rm docker-test5_db10_data
 docker volume rm docker-test5_redis10_data
 docker volume rm docker-test5_wordpress10_content
 
+docker volume rm docker-test5_db11_data
+docker volume rm docker-test5_redis11_data
+docker volume rm docker-test5_wordpress11_content
+
+docker volume rm docker-test5_db12_data
+docker volume rm docker-test5_redis12_data
+docker volume rm docker-test5_wordpress12_content
+
+docker volume rm docker-test5_db13_data
+docker volume rm docker-test5_redis13_data
+docker volume rm docker-test5_wordpress13_content
+
+docker volume rm docker-test5_db14_data
+docker volume rm docker-test5_redis14_data
+docker volume rm docker-test5_wordpress14_content
+
+docker volume rm docker-test5_db15_data
+docker volume rm docker-test5_redis15_data
+docker volume rm docker-test5_wordpress15_content
+
+docker volume rm docker-test5_db16_data
+docker volume rm docker-test5_redis16_data
+docker volume rm docker-test5_wordpress16_content
+
+docker volume rm docker-test5_db17_data
+docker volume rm docker-test5_redis17_data
+docker volume rm docker-test5_wordpress17_content
+
+docker volume rm docker-test5_db18_data
+docker volume rm docker-test5_redis18_data
+docker volume rm docker-test5_wordpress18_content
+
