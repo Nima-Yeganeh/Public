@@ -1,0 +1,7 @@
+bash make_another_command_host_by_num.sh
+bash make_another_docker_compose_template_loop.sh
+bash make_another_docker_compose_volume_template_loop.sh
+bash make_another_nginx_new_by_num.sh
+bash make_another_update_to_down_file.sh
+bash make_another_update_to_map_md_file.sh
+bash make_another_update_to_set_host_config.sh
