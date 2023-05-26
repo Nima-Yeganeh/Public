@@ -97,7 +97,7 @@ def generate_filename(newfilename):
 
 def generate_content(zlanguage, zurl, prompt, sleep_time):
     time.sleep(sleep_time)
-    post_title = generate_response("Translate in " + zlanguage + " >> " + prompt)
+    post_title = generate_response("Translate this topic in " + zlanguage + " >> " + prompt)
     # print(post_title)
     story = generate_response(prompt + " >> Answer in " + zlanguage)
     # print(story)
