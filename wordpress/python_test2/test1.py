@@ -102,7 +102,7 @@ with open(file_path4, 'r') as f:
         prompt = line.strip()
         print(prompt)
         story = generate_response(prompt)
-        print(story)
+        # print(story)
         # with open(generate_filename(prompt), 'w') as output_file:
         # output_file.write(story + '\n')
         zurl = 'domain.local'
@@ -127,7 +127,9 @@ with open(file_path4, 'r') as f:
         zlanguage = "Russian (ru) Language"
         zurl = 'ru.domain.local'
         post_title = generate_response("Translate in " + zlanguage + " >> " + prompt)
+        print(post_title)
         story = generate_response(prompt + " in " + zlanguage)
+        print(story)
         wp_url = 'http://'+zurl+'/xmlrpc.php'
         client = Client(wp_url, wp_username, wp_password)
         post = WordPressPost()
@@ -139,3 +141,4 @@ with open(file_path4, 'r') as f:
         print('done!')
         time.sleep(60)
         ####
+        
