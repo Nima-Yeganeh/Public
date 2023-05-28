@@ -1,0 +1,44 @@
+  db31:
+    image: mysql:5.7
+    volumes:
+      - db31_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: your_mysql_password
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: your_wordpress_password
+  redis31:
+    image: redis:latest
+    restart: always
+    entrypoint: redis-server --appendonly yes --requirepass your-redis-password-here --maxmemory 512mb --maxmemory-policy allkeys-lru
+    ports:
+      - "6379"
+    volumes:
+      - redis31_data:/data
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+  wordpress31:
+    depends_on:
+      - db31
+      - redis31
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - wordpress31_content:/var/www/html/wp-content
+      - ./htaccess:/var/www/html/.htaccess:ro
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: db31:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: your_wordpress_password
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_CONFIG_EXTRA: |
+        /* Redis configuration */
+        define('WP_REDIS_HOST', 'redis31');
+        define('WP_REDIS_PORT', '6379');
+        define('WP_REDIS_PASSWORD', 'your-redis-password-here');
+        define('WP_CACHE_KEY_SALT', 'your-unique-salt-here');
+        define('WP_CACHE', true);
+      REDIS_HOST: redis31

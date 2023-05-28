@@ -68,3 +68,75 @@ docker volume rm docker-test5_db18_data
 docker volume rm docker-test5_redis18_data
 docker volume rm docker-test5_wordpress18_content
 
+docker volume rm docker-test5_db19_data
+docker volume rm docker-test5_redis19_data
+docker volume rm docker-test5_wordpress19_content
+
+docker volume rm docker-test5_db20_data
+docker volume rm docker-test5_redis20_data
+docker volume rm docker-test5_wordpress20_content
+
+docker volume rm docker-test5_db21_data
+docker volume rm docker-test5_redis21_data
+docker volume rm docker-test5_wordpress21_content
+
+docker volume rm docker-test5_db22_data
+docker volume rm docker-test5_redis22_data
+docker volume rm docker-test5_wordpress22_content
+
+docker volume rm docker-test5_db23_data
+docker volume rm docker-test5_redis23_data
+docker volume rm docker-test5_wordpress23_content
+
+docker volume rm docker-test5_db24_data
+docker volume rm docker-test5_redis24_data
+docker volume rm docker-test5_wordpress24_content
+
+docker volume rm docker-test5_db25_data
+docker volume rm docker-test5_redis25_data
+docker volume rm docker-test5_wordpress25_content
+
+docker volume rm docker-test5_db26_data
+docker volume rm docker-test5_redis26_data
+docker volume rm docker-test5_wordpress26_content
+
+docker volume rm docker-test5_db27_data
+docker volume rm docker-test5_redis27_data
+docker volume rm docker-test5_wordpress27_content
+
+docker volume rm docker-test5_db28_data
+docker volume rm docker-test5_redis28_data
+docker volume rm docker-test5_wordpress28_content
+
+docker volume rm docker-test5_db29_data
+docker volume rm docker-test5_redis29_data
+docker volume rm docker-test5_wordpress29_content
+
+docker volume rm docker-test5_db30_data
+docker volume rm docker-test5_redis30_data
+docker volume rm docker-test5_wordpress30_content
+
+docker volume rm docker-test5_db31_data
+docker volume rm docker-test5_redis31_data
+docker volume rm docker-test5_wordpress31_content
+
+docker volume rm docker-test5_db32_data
+docker volume rm docker-test5_redis32_data
+docker volume rm docker-test5_wordpress32_content
+
+docker volume rm docker-test5_db33_data
+docker volume rm docker-test5_redis33_data
+docker volume rm docker-test5_wordpress33_content
+
+docker volume rm docker-test5_db34_data
+docker volume rm docker-test5_redis34_data
+docker volume rm docker-test5_wordpress34_content
+
+docker volume rm docker-test5_db35_data
+docker volume rm docker-test5_redis35_data
+docker volume rm docker-test5_wordpress35_content
+
+docker volume rm docker-test5_db36_data
+docker volume rm docker-test5_redis36_data
+docker volume rm docker-test5_wordpress36_content
+
