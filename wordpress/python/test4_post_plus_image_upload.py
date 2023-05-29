@@ -1,3 +1,5 @@
+# pip3 install python-wordpress-xmlrpc
+
 import os
 import wordpress_xmlrpc
 from wordpress_xmlrpc import Client, WordPressPost
